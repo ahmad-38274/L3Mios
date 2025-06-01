@@ -1,21 +1,88 @@
-
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L3M | متجر التطبيقات</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>L3M ios - تحميل التطبيق</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #ff0000;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    .logo {
+      position: relative;
+      font-size: 6rem;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      user-select: none;
+      overflow: visible;
+      margin-bottom: 40px;
+    }
+
+    /* تأثير البرق */
+    .logo::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -10%;
+      width: 120%;
+      height: 100%;
+      background: linear-gradient(
+        120deg,
+        transparent 20%,
+        rgba(255, 255, 255, 0.8) 40%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.8) 60%,
+        transparent 80%
+      );
+      transform: skewX(-20deg);
+      animation: lightning 2s infinite;
+      pointer-events: none;
+      mix-blend-mode: screen;
+    }
+
+    @keyframes lightning {
+      0%, 100% {
+        left: -30%;
+        opacity: 0;
+      }
+      40% {
+        opacity: 1;
+      }
+      70% {
+        left: 130%;
+        opacity: 0;
+      }
+    }
+
+    .download-btn {
+      background-color: #ff0000;
+      color: white;
+      padding: 18px 50px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #ff0000;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #cc0000;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>مرحباً بك في متجر L3M</h1>
-        <p>قم بتحميل تطبيقاتك المفضلة من خارج المتجر بسهولة.</p>
-        <div class="buttons">
-            <a href="https://deltaios-executor.com/#popup1" class="btn" target="_blank">📱 تحميل تطبيق دلتا</a>
-            <a href="https://example.com/app2.ipa" class="btn" target="_blank">📱 تحميل تطبيق 2</a>
-            <a href="https://example.com/app3.ipa" class="btn" target="_blank">📱 تحميل تطبيق 3</a>
-        </div>
-    </div>
+  <div class="logo">L3M ios</div>
+  <a href="https://ipalinks.ru/dl/yaWx6K" class="download-btn" target="_blank" rel="noopener noreferrer" download>⬇️ تحميل التطبيق</a>
 </body>
 </html>
