@@ -2,54 +2,94 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>الهاكات</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>قسم الهاكات</title>
   <style>
-   <body>
-      background: linear-gradient(to bottom right, #b30000, #ff4d4d);
-      color: white;
+    body {
+      background: linear-gradient(to bottom, #b90000, #ff3d3d);
       font-family: sans-serif;
-      text-align: center;
-      padding: 50px 10px;
-    }
-    .section {
-      background: rgba(255,255,255,0.1);
-      border-radius: 20px;
-      padding: 30px;
-      margin: 20px auto;
-      width: 90%;
-      max-width: 400px;
-    }
-    .btn {
-      background: #c77dff;
-      padding: 10px 30px;
-      border: none;
-      border-radius: 30px;
       color: white;
-      font-size: 16px;
-      cursor: pointer;
-      margin-top: 10px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.2);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px 0;
+    }
+
+    .navbar a {
+      color: white;
       text-decoration: none;
-      display: inline-block;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: background 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 20px;
+      margin: 20px auto;
+      width: 300px;
+      text-align: center;
+    }
+
+    .btn {
+      margin-top: 10px;
+      background-color: #d47aff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #c05efc;
     }
   </style>
 </head>
 <body>
+  <!-- شريط التنقل -->
+  <div class="navbar">
+    <a href="index.html">الرئيسية</a>
+    <a href="hacks.html">الهاكات</a>
+    <a href="apps.html">التطبيقات</a>
+  </div>
+
+  <!-- محتوى الهاكات -->
   <h1>قسم الهاكات</h1>
-  
-  <div class="section">
-    <h3>تحميل هاك دلتا</h3>
-    <a class="btn" href="itms-services://?action=download-manifest&url=https%3A%2F%2Fdeltaios-executor.com%2FInstall2.plist" target="_blank"> للتحميل</a>
+
+  <div class="card">
+    <p>تحميل هاك داتا</p>
+    <button class="btn">اضغط للتحميل</button>
   </div>
 
-  <div class="section">
-    <h3>هاك كوديكس</h3>
-    <a class="btn" href="itms-services://?action=download-manifest&url=https%3A%2F%2Fcodex-ios.com%2FInstall.plist" target="_blank">تحميل</a>
+  <div class="card">
+    <p>هاك كوديكس</p>
+    <button class="btn">تحميل</button>
   </div>
 
-  <div class="section">
-    <h3>هاك كرنل</h3>
-    <a class="btn" href="itms-services://?action=download-manifest&url=https://krnl-ios.com/Install2.plist" target="_blank">تحميل</a>
+  <div class="card">
+    <p>هاك كرنل</p>
+    <button class="btn">تحميل</button>
   </div>
 </body>
 </html>
