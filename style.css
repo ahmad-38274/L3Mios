@@ -1,3 +1,21 @@
+<style>
+  .btn {
+    background-color: #cc80ff;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: 0.3s;
+  }
+
+  .btn:hover {
+    background-color: #b266ff;
+  }
+</style>
 
 
 body {
